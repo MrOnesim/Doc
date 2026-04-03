@@ -420,14 +420,23 @@ const App = () => {
                                                     "Dr. choisi"}
                                                 .
                                             </p>
-                                            <p className="text-gray-600">
-                                                Le médecin vous contactera très
-                                                prochainement pour confirmer
-                                                votre rendez-vous.
-                                            </p>
+                                            <div className="flex flex-col items-center space-y-2">
+                                                <p className="text-gray-600">
+                                                    Le médecin vous contactera
+                                                    très prochainement pour
+                                                    confirmer votre rendez-vous.
+                                                </p>
+
+                                                <img
+                                                    src="public/images/profil-3.jpg"
+                                                    alt="Dame d'acceuillérateur de rendez-vous"
+                                                    className="size-85 rounded-full shadow-lg transform hover:scale-105 transition duration-300"
+                                                />
+                                            </div>
                                             <p className="text-sm text-gray-500">
                                                 Merci pour votre confiance.
                                             </p>
+
                                             <button
                                                 type="button"
                                                 onClick={handleBackHome}
@@ -443,7 +452,7 @@ const App = () => {
                     </div>
                 </div>
             </section>
-            <footer className="bg-gray-900 text-white py-8 px-4">
+            <footer className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-8 px-4">
                 <div className="max-w-6xl mx-auto text-center">
                     <p>© 2026 Doc-Allo — Tous droits réservés</p>
                     <p>Politique de confidentialité</p>
